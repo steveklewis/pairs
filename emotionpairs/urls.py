@@ -22,6 +22,8 @@ from pairs import views
 router = routers.DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
+router.register(r'emotions', views.EmotionViewSet)
+router.register(r'emotionpairs', views.EmotionPairViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
